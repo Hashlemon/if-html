@@ -1,1 +1,1 @@
-<h1 allign="center">Arseni's project</h1>
+<h1 align="center">Arseni's project</h1>
