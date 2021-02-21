@@ -1,1 +1,82 @@
-TEST GPG
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <style>
+        body {background-color: snow;}
+
+        p {font-family: "Trirong", sans-serif;}
+
+        h1  {
+            text-align: center;
+        }
+        .lorem {
+                        float: left;
+                        width: 33.33%;
+                        padding-left: 200px;
+                        text-align: justify
+        }
+
+        .diams, .hearts {color: darkred;}
+
+        .clubs, .spades,{color: black;}
+
+        #flush {
+                        background-color: honeydew;
+                        padding: 10px;
+                        margin-top: 20px;
+                        border-style: solid;
+                        position: absolute;
+                        height: 350px;
+                        width: 100px;
+                        float: right;
+                        left: 50px;
+                        text-align:center;
+                }
+
+    </style>
+</head>
+<body>
+<hr>
+<div class="lorem">
+    <section><h1>Flush</h1>
+        <p>A <em>flush</em> is a hand that contains five cards all of the same suit, not all of sequential rank,
+        such as <span class="clubs">K♣ 10♣ 7♣ 6♣ 4♣</span> (a "king-high flush" or a "king-ten-high flush").
+        It ranks below a full house and above a straight.
+        Under ace-to-five low rules, flushes are not possible(so  <span class="hearts">J♥ 8♥ 4♥ 3♥ 2♥</span> is a jack-high hand)</p></section>
+    <section><p>Each flush is ranked first by the rank of its highest-ranking card,
+        then by the rank of its second highest-ranking card, then by the rank of its third highest-ranking card,
+        then by the rank of its fourth highest-ranking card, and finally by the rank of its lowest-ranking card.
+        For example, <span class="diams">K♦ J♦ 9♦ 6♦ 4♦</span> ranks higher than <span class="clubs">Q♣ J♣ 7♣ 6♣ 5♣</span>,
+        which ranks higher than <span class="hearts">J♥ 10♥ 9♥ 4♥ 2♥</span>,
+        which ranks higher than <span class="spades">J♠ 10♠ 8♠ 6♠ 3♠</span>, which ranks higher than <span class="hearts">J♥ 10♥ 8♥ 4♥ 3♥</span>,
+        which ranks higher than <span class="clubs">J♣ 10♣ 8♣ 4♣ 2♣</span>.
+        Flush hands that differ by suit alone, such as <span class="diams">10♦ 8♦ 7♦ 6♦ 5♦</span> and
+        <span class="spades">10♠ 8♠ 7♠ 6♠ 5♠</span>, are of equal rank. <q>Wikipedia</q></p></section>
+</div>
+
+<div id="flush">
+    <div class="spades">
+        <p>&#9824 &#9824 &#9824 &#9824 &#9824</p>
+    </div>
+    <div class="clubs">
+        <p>&#9827 &#9827 &#9827 &#9827 &#9827</p>
+    </div>
+    <div class="hearts">
+        <p>&#9829 &#9829 &#9829 &#9829 &#9829</p>
+    </div>
+    <div class="diams">
+        <p>&#9830 &#9830 &#9830 &#9830 &#9830</p>
+    </div>
+        <p style="text-transform: uppercase"><strong>flush</strong></p>
+        &#128512 &#128079
+        <div class="image">
+            <img src="./images/flush.jpg" alt="flush" width="100" height="100">
+        </div>
+</div>
+
+
+</body>
+</html>
