@@ -15,17 +15,18 @@
         h1  {
             text-align: center;
         }
+        /* Text and List */
         .lorem, .hands {
                         float: left;
                         width: 33.33%;
                         padding-left: 200px;
                         text-align: justify;
         }
-
+        /*  Red Cards */
         .diams, .hearts {color: darkred;}
-
+        /*  Black Cards */
         .clubs, .spades,{color: black;}
-
+        /* Box with 4 flushes */
         #flush {
                         background-color: honeydew;
                         padding: 10px;
@@ -38,12 +39,37 @@
                         left: 50px;
                         text-align:center;
                 }
+        /* Poker combos. Nice google font Akaya Telivigala */
         ol {
             background-color: antiquewhite;
             font-family: 'Akaya Telivigala', cursive;
             font-size: large;
 
         }
+        table , th, td{
+            border: 1px solid black;
+        }
+        th {
+            text-align: center;
+
+        }
+        #tag {
+            width: 200px;
+        }
+        #descr {
+            width: 800px;
+        }
+        /* Table Box pos*/
+        .table {
+            float: left;
+            margin-top: 550px;
+            position: absolute;
+            left: 50px;
+            font-family: "Times New Roman", Times, serif;
+            font-size: large;
+        }
+
+
     </style>
 </head>
 <body>
@@ -110,6 +136,50 @@
 
     </ol>
 
+</div>
+<div class="table">
+<table>
+    <tr>
+        <th id="tag">Tag</th>
+        <th id="descr">Description</th>
+        </tr>
+    <tr>
+        <td>&#60;table&#62;</td>
+        <td>Defines a table</td>
+    </tr>
+    <tr>
+        <td>&#60;tr&#62;</td>
+        <td>Defines a row in a table</td>
+    </tr>
+    <tr>
+        <td>&#60;th&#62;</td>
+        <td rowspan="2">Defines a "header cell"/"cell" in a table</td>
+    </tr>
+    <tr>
+        <td>&#60;td&#62;</td>
+    </tr>
+    <tr>
+    <td colspan="2">Rarely used</td>
+</tr>
+    <tr>
+    <td>&#60;caption&#62;</td>
+    <td>Defines a table caption</td>
+
+</tr><tr>
+    <td>&#60;thead&#62;</td>
+    <td>Groups the header content in a table</td>
+
+</tr><tr>
+    <td>&#60;tbody&#62;</td>
+    <td>Groups the body content in a table</td>
+
+</tr><tr>
+    <td>&#60;tfoot&#62;</td>
+    <td>Groups the footer content in a table</td>
+
+
+</tr>
+</table>
 </div>
 
 </body>
