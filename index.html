@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -21,6 +21,10 @@
                         width: 33.33%;
                         padding-left: 200px;
                         text-align: justify;
+        }
+        .hands {
+            padding-left: 50px;
+            width: 300px;
         }
         /*  Red Cards */
         .diams, .hearts {color: darkred;}
@@ -57,19 +61,27 @@
             width: 200px;
         }
         #descr {
-            width: 800px;
+            width: 770px;
         }
         /* Table Box pos*/
-        .table {
+        .table_form {
             float: left;
             margin-top: 550px;
             position: absolute;
+            padding-top: 20px;
             left: 50px;
             font-family: "Times New Roman", Times, serif;
             font-size: large;
         }
-
-
+        /* Form Box */
+        .form {
+            margin: 20px 0 20px 0;
+            background-color: white;
+            font-size: medium;
+        }
+        #select {
+            width: 400px;
+        }
     </style>
 </head>
 <body>
@@ -137,7 +149,7 @@
     </ol>
 
 </div>
-<div class="table">
+<div class="table_form">
 <table>
     <tr>
         <th id="tag">Tag</th>
@@ -180,7 +192,39 @@
 
 </tr>
 </table>
+    <div class="form">
+    <form action="/" method="GET" oninput="x.value=parseInt(a.value)">
+        <fieldset>
+            <legend>My first form</legend>
+            <label>Name:<br></br>
+                <input type="text" name="name" placeholder="Name" required></label><br></br>
+            <label>E-mail:<br></br>
+            <input type="email" name="email" required></label><br></br>
+            <label>Password:<br></br>
+            <input type="password" name="password" required></label><br></br>
+            <label>Your programming level<br></br>
+            <input type="range" name="a" value="0" min="0" max="10"></label>
+            <output name="x" for="a"></output><br></br>
+            <p>What does HTML stand for?</p>
+            <label><input type="checkbox" name="check" value="1"> Hyperlink and Text Markup Language</label><br></br>
+            <label><input type="checkbox" name="check" value="2"> Home Tool Markup Language</label><br></br>
+            <label><input type="checkbox" name="check" value="3"> Hyper Text and Markup Language</label><br></br>
+            <p>What does HTTP stand for</p>
+            <label><input type="radio" name="radio" value="1"> Hyper Text Translate Protocol</label><br></br>
+            <label><input type="radio" name="radio" value="2"> Hyper Text Transmission Protocol</label><br></br>
+            <label><input type="radio" name="radio" value="3"> Hyper Text Transfer Protocol</label><br></br>
+            <label>Comment:<br></br><textarea name="message" rows="2" cols="30">Comment</textarea></label><br></br>
+            <label>What does HTML stand for?<br></br><select id="select" name="choice">
+                <option value="answer">Your answer</option>
+            </select>
+            </label><br></br>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    </div>
 </div>
 
 </body>
 </html>
+
