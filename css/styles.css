@@ -1,11 +1,20 @@
-* {  font-family: 'Roboto', sans-serif;
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto-Regular.ttf) format("truetype"),
+         url(fonts/roboto.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+body { font-family: Roboto, sans-serif;
     background-color: #FFFFFF;
     text-align: center;}
 
 .container-1 {
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: space-around;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -17,13 +26,8 @@
     margin: 10px;
 }
 
-.box-1, .box-2, .box-3, .box-4{
-    flex: 1;
-}
-
 .heading {
     display: inline-block;
-    horiz-align: center;
     margin-top: 120px;
     margin-bottom: 100px;
 }
@@ -40,3 +44,41 @@
     background: #F5BD41;
 }
 
+footer {
+    padding: 120px 270px 100px 120px;
+    background-color: #10367C;
+    color: #FFFFFF;
+}
+
+.container-footer-flex {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 20px;
+    max-width: 800px;
+
+}
+
+.f-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+li:first-child {
+    font-weight: 600;
+}
+
+ ul.f-list li {
+     padding-bottom: 25px;
+     line-height: 23px;
+     font-size: 20px;
+ }
+
+.copyleft {
+    font-size: 14px;
+    text-align: left;
+    margin-top: 65px;
+}
