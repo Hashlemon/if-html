@@ -1,84 +1,87 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url(fonts/Roboto-Regular.ttf) format("truetype"),
-         url(fonts/roboto.woff2) format("woff2");
-    font-style: normal;
-    font-weight: 400;
-
+  font-family: 'Roboto';
+  src: url(fonts/Roboto-Regular.ttf) format("truetype"),
+    url(fonts/roboto.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
 }
 
-body { font-family: Roboto, sans-serif;
-    background-color: #FFFFFF;
-    text-align: center;}
+body {
+  font-family: Roboto, sans-serif;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.container {
+  padding: 0 100px 0 100px;
+}
 
 .container-1 {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  padding-bottom: 120px;
 }
 
 .container-1 div {
-
-    margin: 10px;
+  margin: 10px;
 }
 
 .heading {
-    display: inline-block;
-    margin-top: 120px;
-    margin-bottom: 100px;
+  display: inline-block;
+  margin-top: 120px;
+  margin-bottom: 100px;
 }
 
 .heading h1 {
-    margin-bottom: 0;
-
+  margin-bottom: 0;
 }
+
 .line {
-    content: "";
-    display: inline-block;
-    width: 100px;
-    height: 4px;
-    background: #F5BD41;
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 4px;
+  background: #F5BD41;
 }
 
 footer {
-    padding: 120px 270px 100px 120px;
-    background-color: #10367C;
-    color: #FFFFFF;
+  background-color: #10367C;
+  color: #FFFFFF;
 }
 
 .container-footer-flex {
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    font-size: 20px;
-    max-width: 800px;
-
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  font-size: 20px;
+  max-width: 800px;
+  padding-top: 120px;
 }
 
 .f-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-
-
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 li:first-child {
-    font-weight: 600;
+  font-weight: 600;
 }
 
- ul.f-list li {
-     padding-bottom: 25px;
-     line-height: 23px;
-     font-size: 20px;
- }
+ul.f-list li {
+  padding-bottom: 25px;
+  line-height: 23px;
+  font-size: 20px;
+}
 
 .copyleft {
-    font-size: 14px;
-    text-align: left;
-    margin-top: 65px;
+  font-size: 14px;
+  text-align: left;
+  margin-top: 65px;
+  padding-bottom: 120px
 }
