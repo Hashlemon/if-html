@@ -6,17 +6,187 @@
   font-weight: 400;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: Roboto, sans-serif;
   background-color: #FFFFFF;
   text-align: center;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF
+}
+
+nav #navigation {
+  display: flex;
+  align-items: center;
+
+}
+
+#navigation li a {
+  font-size: 24px;
 }
 
 .container {
   padding: 0 100px 0 100px;
 }
 
-.container-1 {
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: last baseline;
+}
+
+input {
+  margin-top: 24px;
+  border-color: #f3f3f3 solid 3px;
+
+  padding: 24px;
+  background: #FFFFFF;
+  min-width: 100%;
+}
+
+input[placeholder] {
+  color: #383838;
+}
+
+.flex-input {
+  display: flex;
+  justify-content: center;
+  align-items: last baseline;
+  padding: 100px 0 120px 0;
+  color: #FFFFFF;
+  text-align: left;
+  flex-wrap: wrap;
+  width: auto;
+
+}
+
+#city {
+  border: #f3f3f3 solid 3px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  }
+
+.destination {
+  flex: 30%;
+
+}
+
+
+#date {
+  border: #F5BD41 solid 3px;
+  border-radius: 8px;
+  box-sizing: content-box;
+}
+
+.in-out {
+  flex: 20%;
+}
+
+#residents {
+  border: #f3f3f3 solid 3px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.residents {
+  flex: 20%;
+}
+
+#search {
+  background: #3077C6;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 0;
+  text-align: center;
+  border-radius: 8px;
+  border: #3077C6 solid 3px;
+  height: 64px;
+
+}
+.search {
+  flex: 10%;
+  }
+
+.flex-apps {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+
+
+header {
+  padding-top: 50px;
+}
+
+
+#stays, #night {
+  padding-right: 24px;
+}
+
+#night {
+  transform: translateY(13%);
+}
+
+#user {
+  transform: translateY(10%);
+}
+
+#attractions {
+  padding-right: 48px;
+}
+
+#stays {
+  position: relative;
+  }
+
+
+#stays::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: #F5BD41;
+  position: absolute;
+  margin-top: 5px;
+  transform: translateX(10%);
+}
+
+#showcase-h1 {
+  color: #FFFFFF;
+  text-align: left;
+  padding-top: 15vh;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 59px
+}
+
+.image-container {
+ background-image: url("../images/castelmezzano.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  background-position-x: center;
+  background-position-y: -100px;
+}
+
+
+.container-offers {
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
@@ -27,7 +197,7 @@ body {
   padding-bottom: 120px;
 }
 
-.container-1 div {
+.container-offers div {
   margin: 10px;
 }
 
@@ -69,7 +239,7 @@ footer {
   margin: 0;
 }
 
-li:first-child {
+.f-list li:first-child {
   font-weight: 600;
 }
 
