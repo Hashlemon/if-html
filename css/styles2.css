@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto-Regular.ttf) format("truetype"),
+    url(fonts/roboto.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 400;
+}
+:root {
+    --general_white: #FFFFFF;
+    --general_blue: #10367C;
+    --accent_yellow: #F5BD41;
+}
+
+.col-1 {width: 7.142857143%;}
+.col-2 {width: 14.285714286%;}
+.col-3 {width: 21.428571429%;}
+.col-4 {width: 28.571428572%;}
+.col-5 {width: 35.714285715%;}
+.col-6 {width: 42.857142858%;}
+.col-7 {width: 50%;}
+.col-8 {width: 57.142857143%;}
+.col-9 {width: 64.285714286%;}
+.col-10 {width: 71.428571429%;}
+.col-11 {width: 78.571428572%;}
+.col-12 {width: 85.714285715%;}
+.col-13 {width: 92.857142858%;}
+.col-14 {width: 100%;}
+
+.col-1 {width: 7.142857143%;}
+.col-2 {width: 14.285714286%;}
+.col-3 {width: 21.428571429%;}
+.col-4 {width: 28.571428572%;}
+.col-5 {width: 35.714285715%;}
+.col-6 {width: 42.857142858%;}
+.col-7 {width: 50%;}
+.col-8 {width: 57.142857143%;}
+.col-9 {width: 64.285714286%;}
+.col-10 {width: 71.428571429%;}
+.col-11 {width: 78.571428572%;}
+.col-12 {width: 85.714285715%;}
+.col-13 {width: 92.857142858%;}
+.col-14 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF
+}
+
+/*global*/
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 1 auto;
+}
+
+.container {
+    max-width: 100%;
+    margin: 120px 0 120px;
+
+}
+
+/* header*/
+.bg-image {
+    background-image: url("../images/castelmezzano.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    background-position-x: center;
+    background-position-y: -100px;
+}
+
+.container-main-page {
+    margin-top: 0;
+    display: flex;
+}
+/* header logo navigation icons*/
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.header__logo
+
+.logo {
+    height: 40px;
+    width: 205px;
+}
+
+/* header navigation, icons */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+/*header navigation*/
+.navigation__row {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--general_white);
+
+
+}
+
+li.stays, li.attractions  {
+    display: inline;
+}
+
+.stays::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: var(--accent_yellow);
+    position: absolute;
+    margin-top: 5px;
+    transform: translateX(10%);
+    transition: opacity 0.4s ease;
+    opacity: 0;
+}
+
+.stays:hover::after {
+    opacity: 1;
+}
+
+.attractions::after {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 4px;
+    background: var(--accent_yellow);
+    position: absolute;
+    margin-top: 5px;
+    transform: translateX(0%);
+    transition: opacity 0.4s ease;
+    opacity: 0;
+}
+
+.attractions:hover::after {
+    opacity: 1;
+}
+/*header icons*/
+.navigation__icons {
+    display: flex;
+    align-items: center;
+}
+
+.night {
+    height: 30px;
+    width: 30px;
+}
+
+.accountcircle {
+    height: 40px;
+    width: 40px;
+}
+/* footer */
+footer {
+    background-color: var(--general_blue);
+    color: var(--general_white);
+}
+
+footer li {
+    margin-top: 30px;
+}
+
+.footer__row {
+    display: flex;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: left;
+}
+
+.support__list li:first-child, .about__list li:first-child, .types__list li:first-child {
+    font-weight: 600;
+    margin-top: 0;
+}
+
+
+.copyleft__row {
+    display: flex;
+}
+.copyleft__item {
+    margin-top: 70px;
+    float: left;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+<header class="header">
+            <div class="bg-image">
+                <div class="container container-main-page">
+                    <div class="col-1"></div>
+                    <div class="header__row col-12">
+                        <div class="header__logo">
+                            <a href="#">
+                            <svg class="logo">
+                                <use xlink:href="#logo" href="#logo"></use>
+                            </svg>
+                            </a>
+                        </div>
+                        <nav class="navigation col-4">
+                            <div class="navigation__row">
+                                <div class="stays"><a href="#">Stays</a></div>
+                                <div class="attractions"><a href="#">Attractions</a></div>
+                            </div>
+                            <div class="navigation__icons">
+                                <svg class="night">
+                                    <use xlink:href="#night" href="#night"></use>
+                                </svg>
+                                <svg class="accountcircle">
+                                    <use xlink:href="#accountcircle" href="#accountcircle"></use>
+                                </svg>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </header>
